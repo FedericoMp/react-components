@@ -2,6 +2,9 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
+require('bootstrap/dist/css/bootstrap.min.css');
+require('bootstrap/dist/js/bootstrap.min.js');
+require('@popperjs/core/dist/umd/popper.min.js');
 var React = require('react');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
@@ -12,69 +15,36 @@ function HelloWorld() {
   return /*#__PURE__*/React__default["default"].createElement("div", null, "HelloWorld");
 }
 
-function SecondComponent() {
-  return /*#__PURE__*/React__default["default"].createElement("div", {
-    className: "accordion",
-    id: "accordionExample"
-  }, /*#__PURE__*/React__default["default"].createElement("div", {
-    className: "accordion-item"
-  }, /*#__PURE__*/React__default["default"].createElement("h2", {
-    className: "accordion-header",
-    id: "headingOne"
-  }, /*#__PURE__*/React__default["default"].createElement("button", {
-    className: "accordion-button",
+function Button() {
+  return /*#__PURE__*/React__default["default"].createElement("div", null, /*#__PURE__*/React__default["default"].createElement("button", {
     type: "button",
-    "data-bs-toggle": "collapse",
-    "data-bs-target": "#collapseOne",
-    "aria-expanded": "true",
-    "aria-controls": "collapseOne"
-  }, "Accordion Item #1")), /*#__PURE__*/React__default["default"].createElement("div", {
-    id: "collapseOne",
-    className: "accordion-collapse collapse show",
-    "aria-labelledby": "headingOne",
-    "data-bs-parent": "#accordionExample"
-  }, /*#__PURE__*/React__default["default"].createElement("div", {
-    className: "accordion-body"
-  }, /*#__PURE__*/React__default["default"].createElement("strong", null, "This is the first item's accordion body."), " It is shown by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the ", /*#__PURE__*/React__default["default"].createElement("code", null, ".accordion-body"), ", though the transition does limit overflow."))), /*#__PURE__*/React__default["default"].createElement("div", {
-    className: "accordion-item"
-  }, /*#__PURE__*/React__default["default"].createElement("h2", {
-    className: "accordion-header",
-    id: "headingTwo"
-  }, /*#__PURE__*/React__default["default"].createElement("button", {
-    className: "accordion-button collapsed",
+    className: "btn btn-primary"
+  }, "Primary"), /*#__PURE__*/React__default["default"].createElement("button", {
     type: "button",
-    "data-bs-toggle": "collapse",
-    "data-bs-target": "#collapseTwo",
-    "aria-expanded": "false",
-    "aria-controls": "collapseTwo"
-  }, "Accordion Item #2")), /*#__PURE__*/React__default["default"].createElement("div", {
-    id: "collapseTwo",
-    className: "accordion-collapse collapse",
-    "aria-labelledby": "headingTwo",
-    "data-bs-parent": "#accordionExample"
-  }, /*#__PURE__*/React__default["default"].createElement("div", {
-    className: "accordion-body"
-  }, /*#__PURE__*/React__default["default"].createElement("strong", null, "This is the second item's accordion body."), " It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the ", /*#__PURE__*/React__default["default"].createElement("code", null, ".accordion-body"), ", though the transition does limit overflow."))), /*#__PURE__*/React__default["default"].createElement("div", {
-    className: "accordion-item"
-  }, /*#__PURE__*/React__default["default"].createElement("h2", {
-    className: "accordion-header",
-    id: "headingThree"
-  }, /*#__PURE__*/React__default["default"].createElement("button", {
-    className: "accordion-button collapsed",
+    className: "btn btn-secondary"
+  }, "Secondary"), /*#__PURE__*/React__default["default"].createElement("button", {
     type: "button",
-    "data-bs-toggle": "collapse",
-    "data-bs-target": "#collapseThree",
-    "aria-expanded": "false",
-    "aria-controls": "collapseThree"
-  }, "Accordion Item #3")), /*#__PURE__*/React__default["default"].createElement("div", {
-    id: "collapseThree",
-    className: "accordion-collapse collapse",
-    "aria-labelledby": "headingThree",
-    "data-bs-parent": "#accordionExample"
-  }, /*#__PURE__*/React__default["default"].createElement("div", {
-    className: "accordion-body"
-  }, /*#__PURE__*/React__default["default"].createElement("strong", null, "This is the third item's accordion body."), " It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the ", /*#__PURE__*/React__default["default"].createElement("code", null, ".accordion-body"), ", though the transition does limit overflow."))));
+    className: "btn btn-success"
+  }, "Success"), /*#__PURE__*/React__default["default"].createElement("button", {
+    type: "button",
+    className: "btn btn-danger"
+  }, "Danger"), /*#__PURE__*/React__default["default"].createElement("button", {
+    type: "button",
+    className: "btn btn-warning"
+  }, "Warning"), /*#__PURE__*/React__default["default"].createElement("button", {
+    type: "button",
+    className: "btn btn-info"
+  }, "Info"), /*#__PURE__*/React__default["default"].createElement("button", {
+    type: "button",
+    className: "btn btn-light"
+  }, "Light"), /*#__PURE__*/React__default["default"].createElement("button", {
+    type: "button",
+    className: "btn btn-dark"
+  }, "Dark"), /*#__PURE__*/React__default["default"].createElement("button", {
+    type: "button",
+    className: "btn btn-link"
+  }, "Link"));
 }
 
+exports.Button = Button;
 exports.HelloWorld = HelloWorld;
-exports.SecondComponent = SecondComponent;
